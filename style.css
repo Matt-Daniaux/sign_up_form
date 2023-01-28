@@ -1,0 +1,189 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url(Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: gloria;
+    src: url(Gloria_Hallelujah/GloriaHallelujah-Regular.ttf);
+}
+
+
+* {
+    border: 0px solid green;
+    box-sizing: border-box;
+
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    
+
+}
+
+
+body {
+    background-image: url(/img/PB140231.jpg);
+    background-size: cover;
+    /*background-color: rgb(78, 96, 111);*/
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0px;
+
+
+    display: flex;
+
+}
+
+.left-container,
+.right-container {
+    min-height: 100vh;
+    overflow: scroll;
+
+    display: flex;
+}
+
+.left-container {
+    width: 40%;
+}
+
+.right-container {
+    width: 60%;
+    background-color: rgba(255, 242, 200, 0.357);
+    
+    flex-direction: column;
+}
+
+
+.text,
+.submit {
+    height: 35%;
+    overflow: auto;
+}
+
+.form {
+    height: 30%;
+    background-color: rgba(255, 250, 232, 0.672);
+    overflow: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/*text*/
+.text h1 {
+    margin: 6rem 0 0 0rem;
+
+
+    font-family: gloria, arial, sans-serif;
+    font-size: 4rem;
+    color: rgb(64, 49, 49);
+}
+
+.text p {
+    margin: 1rem 0 0 0rem;
+
+    font-family: gloria, arial, sans-serif;
+    font-size: 1.5rem;
+    color: rgb(64, 49, 49)
+}
+
+/*form*/
+.form-column1,
+.form-column2 {
+    display: flex;
+    flex-direction: column;
+
+   justify-content: space-between;
+
+    
+
+    width: 100%;
+    height: 80%;
+    max-width: 350px;
+}
+
+
+.form-column2 {
+    margin-left: ;
+}
+
+.form-basic {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    margin: 0px 4rem 0px 0rem;
+    padding: 0.2rem 0.75rem;
+    max-width: 300px;
+
+    border-radius: 0.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.605);
+
+    background-color: rgba(64, 49, 49, 0.13);
+    color: rgb(64, 49, 49);
+}
+
+label {
+    margin: 0px 4rem 0px 0rem;
+
+    font-size: 0.8rem;
+    color: rgb(64, 49, 49)
+}
+
+input:focus {
+    background-color: #063b4a3b;
+    border: 2px solid #063b4a;
+    outline: none;
+    color: rgb(64, 49, 49);
+}
+
+/*submit*/
+.submit button {
+    margin: 3rem 4rem 0px 0rem;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    
+
+    background-color: #063b4a;
+    color: white;
+
+    font-family: gloria;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.submit p {
+    margin: 1.5rem 4rem 0px 0rem;
+
+    font-size: 1rem;
+
+}
+
+.submit p a {
+    text-decoration: none;
+    
+    
+    font-family: poppins-bold;
+    font-size: 1.1rem;
+    color: rgb(23, 18, 18)
+
+
+
+}
+
+
+/*margin-left*/
+.text h1,
+.text p,
+.submit button,
+.submit p,
+.form-column1    {
+    margin-left: 6rem;
+}
