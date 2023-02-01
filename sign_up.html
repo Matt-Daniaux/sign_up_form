@@ -10,8 +10,8 @@
 <body>
     <div class="left-container">
         <div class="svg">
-            <img src="icon/triangle.svg" alt="triangle">
-            <img src="icon/arrow-archery.svg" alt="arrow">
+            <img src="icon/triangle.svg" alt="triangle" class="triangle">
+            <img src="icon/arrow-archery.svg" alt="arrow" class="arrow">
             <div class="brand">
                 <p class="p1">Delta</p><p class="p2">Corbeau</p>
             </div>
@@ -31,36 +31,34 @@
         <form action="" method="get" class="form" id="form">
             <div class="form-column1">
                 <div class="form-basic">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <label for="first-name">FIRST NAME <span><strong>*</strong></span></label>
+                    <span class=".validation"></span>
+                    <input type="text" name="first-name" id="first-name" placeholder=" " required>
                 </div>
                 <div class="form-basic">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">EMAIL<span><strong>*</strong></span></label>
+                    <input type="email" name="email" id="email" placeholder="ex@exemple.com" required>
                 </div>
                 <div class="form-basic">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <label for="password">PASSWORD<span><strong>*</strong></span></label>
+                    <input type="password" name="password" id="password" placeholder=" " required>
                 </div>
 
             </div>
             <div class="form-column2">
                 <div class="form-basic">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <label for="last-name">LAST NAME<span><strong>*</strong></span></label>
+                    <input type="text" name="last-name" id="last-name" placeholder=" " required>
                 </div>
 
-                
-                
                 <div class="form-basic">
                     <label for="tel">PHONE NUMBER</label>
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel" placeholder="x-xxx-xxx-xxxx">
                 </div>
 
-                
                 <div class="form-basic">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <label for="confirm-password">CONFIRM PASSWORD<span><strong>*</strong></span></label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder=" " required>
                 </div>
             </div>
 
